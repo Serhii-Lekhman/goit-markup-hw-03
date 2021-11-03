@@ -91,6 +91,7 @@
 /* Особенности */
 .features-items-caption {
   font-weight: 700;
+  font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
@@ -154,7 +155,7 @@
   text-decoration: none;
 }
 
-.button {
+.content-set-button {
   color: var(--title-text-color);
   background-color: #f5f4fa;
   cursor: pointer;
@@ -166,8 +167,8 @@
   text-decoration: none;
 }
 
-.button:hover,
-.button:focus {
+.content-set-button:hover,
+.content-set-button:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
@@ -190,12 +191,14 @@
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   text-decoration: none;
+  font-style: normal;
 }
 
 .footer-contacts-address {
   color: var(--primary-white-color);
   font-size: 14px;
   text-decoration: none;
+  font-style: normal;
 }
 
 .footer-contacts-link:hover,
