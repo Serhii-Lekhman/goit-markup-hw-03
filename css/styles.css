@@ -57,6 +57,10 @@ p {
 }
 
 /* Заголовки */
+.heading {
+  display: none;
+}
+
 .title,
 .section-title {
   color: var(--title-text-color);
@@ -290,6 +294,7 @@ p {
   margin: 15px;
 }
 
+/* Альтернатива */
 /* .content-items-el {
   width: calc((100%-60px) / 3);
 } */
