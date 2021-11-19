@@ -36,7 +36,7 @@
 .container {
   margin-right: auto;
   margin-left: auto;
-  width: 1200px;
+  width: 1170px;
   padding-right: 15px;
   padding-left: 15px;
 
@@ -79,6 +79,9 @@ p {
 
 /* лого шапки*/
 .site-logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
+
   color: #000;
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -305,7 +308,6 @@ p {
 
 .content-items-caption {
   margin-bottom: 4px;
-  margin-top: 20px;
 
   font-weight: 700;
   font-size: 18px;
@@ -319,6 +321,12 @@ p {
   line-height: 1.88;
 }
 
+.caption-text {
+  padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+}
 /* .border {
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
@@ -331,6 +339,10 @@ p {
   padding-bottom: 60px;
 
   background-color: var(--hero-footer-bcg-color);
+}
+
+.footer-contacts-el:first-child {
+  margin-top: 20px;
 }
 
 .footer-contacts-el:not(:last-child) {
@@ -354,8 +366,6 @@ p {
 }
 
 .footer-contacts-address {
-  margin-top: 20px;
-
   color: var(--primary-white-color);
   font-size: 14px;
   text-decoration: none;
