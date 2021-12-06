@@ -8,5 +8,10 @@
   "bracketSpacing": true,
   "jsxBracketSameLine": false,
   "arrowParens": "avoid",
-  "proseWrap": "always"
+  "proseWrap": "always",
+  "prettier.disableLanguages": ["javascript", "javascriptreact"],
+"prettier.useTabs": true,
+"[html]": {
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+}
 }
