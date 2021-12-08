@@ -17,7 +17,7 @@
 }
 
 /* основа */
-.page-body {
+body {
   color: var(--primary-text-color);
   background-color: #fff;
   font-family: Roboto, sans-serif;
@@ -26,25 +26,38 @@
   letter-spacing: 0.03em;
 }
 
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+}
+
 .list {
   padding: 0;
   margin: 0;
-
   list-style: none;
 }
 
 .container {
+  /* width: 1200px; */
+  width: 1170px;
   margin-right: auto;
   margin-left: auto;
-  width: 1170px;
   padding-right: 15px;
   padding-left: 15px;
-
-  /* outline: 2px solid purple; */
-}
-
-p {
-  margin: 0;
 }
 
 .section {
@@ -52,7 +65,7 @@ p {
   padding-bottom: 94px;
 }
 
-.section.no-padding-bottom {
+.no-padding-bottom {
   padding-bottom: 0;
 }
 
@@ -91,7 +104,7 @@ p {
 }
 
 /* лого шапки*/
-.site-logo {
+.header-logo {
   padding-top: 24px;
   padding-bottom: 25px;
 
@@ -108,43 +121,43 @@ p {
 }
 
 /* Навигация и контакты */
-.main,
-.site {
+.header-flex,
+.header-nav {
   display: flex;
   align-items: center;
 }
 
-.main {
+.header {
   border-bottom: 1px solid #ececec;
 }
 
-.site-nav {
+.header-nav-list {
   display: flex;
   margin-left: 93px;
 }
 
-.contacts {
+.header-contacts {
   display: flex;
   margin-left: auto;
 }
 
-.site-nav-item:not(:last-child) {
+.header-nav-item:not(:last-child) {
   margin-right: 50px;
 }
 
-.contacts-item + .contacts-item {
-  margin-left: 50px;
+.header-contacts-item:not(:last-child) {
+  margin-right: 50px;
 }
 
-.site-nav,
-.contacts {
+.header-nav-list,
+.header-contacts {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
-.site-nav-link {
+.header-nav-link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -153,7 +166,7 @@ p {
   text-decoration: none;
 }
 
-.contacts-link {
+.header-contacts-link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -162,23 +175,28 @@ p {
   text-decoration: none;
 }
 
-.site-nav-link:hover,
-.site-nav-link:focus,
-.contacts-link:hover,
-.contacts-link:focus,
-.site-nav-link.current {
+.header-nav-link:hover,
+.header-nav-link:focus,
+.header-contacts-link:hover,
+.header-contacts-link:focus,
+.header-nav-link.current {
   color: var(--accent-color);
 }
 
 /* Герой */
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-color: var(--hero-footer-bcg-color);
   text-align: center;
 }
 
 .hero-title {
+  max-width: 696px;
   margin-top: 0;
   margin-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
 
   color: var(--primary-white-color);
   font-weight: 900;
@@ -190,60 +208,66 @@ p {
 
 /* Кнопка героя */
 .hero-button {
+  min-width: 200px;
+  min-height: 50px;
   border-radius: 4px;
   padding: 10px 32px;
 
   color: var(--primary-white-color);
   background-color: var(--accent-color);
-  cursor: pointer;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1, 88;
+  line-height: 1, 87;
   letter-spacing: 0.06em;
   text-decoration: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* Особенности */
-.features-items-caption {
+.features-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
 
-.features-items {
+.features-list {
   display: flex;
 }
 
-.features-items-el:not(:last-child) {
+.features-item {
+  width: 270px;
+}
+
+.features-item:not(:last-child) {
   margin-right: 30px;
 }
 
 /* Чем мы занимаемся */
-.use-example {
+.work-list {
   display: flex;
 }
 
-.use-example-item:not(:last-child) {
+.work-item:not(:last-child) {
   margin-right: 30px;
 }
 
 /* Наша команда */
-.command-items {
-  display: flex;
-}
-
-.command-items-el:not(:last-child) {
-  margin-right: 30px;
-}
-
 .command {
   background-color: var(--secondary-background-color);
+}
+
+.command-list {
+  display: flex;
   text-align: center;
 }
 
-.command-items-caption {
+.command-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.command-name {
   margin-top: 30px;
 
   font-weight: 500;
@@ -251,7 +275,7 @@ p {
   line-height: 1.19;
 }
 
-.command-items-text {
+.command-text {
   padding-bottom: 30px;
 
   font-size: 16px;
@@ -277,7 +301,6 @@ p {
 
   color: var(--title-text-color);
   background-color: #f5f4fa;
-  cursor: pointer;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -341,11 +364,6 @@ p {
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
 }
-/* .border {
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
-} */
 
 /* Футер */
 .footer {
