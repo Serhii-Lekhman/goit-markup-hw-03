@@ -22,7 +22,7 @@ body {
   background-color: #fff;
   font-family: Roboto, sans-serif;
   font-size: 14px;
-  line-height: 1, 71;
+  line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
@@ -52,8 +52,7 @@ img {
 }
 
 .container {
-  /* width: 1200px; */
-  width: 1170px;
+  width: 1200px;
   margin-right: auto;
   margin-left: auto;
   padding-right: 15px;
@@ -95,7 +94,7 @@ img {
 
   font-weight: 700;
   font-size: 36px;
-  line-height: 1, 16;
+  line-height: 1.16;
 }
 
 .title {
@@ -152,7 +151,6 @@ img {
 .header-nav-list,
 .header-contacts {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
@@ -201,7 +199,7 @@ img {
   color: var(--primary-white-color);
   font-weight: 900;
   font-size: 44px;
-  line-height: 1, 36;
+  line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
@@ -218,7 +216,7 @@ img {
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1, 87;
+  line-height: 1.87;
   letter-spacing: 0.06em;
   text-decoration: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -227,7 +225,6 @@ img {
 /* Особенности */
 .features-title {
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
@@ -268,18 +265,19 @@ img {
 }
 
 .command-name {
-  margin-top: 30px;
-
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
 }
 
 .command-text {
-  padding-bottom: 30px;
-
   font-size: 16px;
   line-height: 1.19;
+}
+
+.command-desc {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 /* Кнопки портфолио 2 страница */
@@ -392,14 +390,12 @@ img {
 
 .footer-contacts-link {
   color: rgba(255, 255, 255, 0.6);
-  font-size: 14px;
   text-decoration: none;
   font-style: normal;
 }
 
 .footer-contacts-address {
   color: var(--primary-white-color);
-  font-size: 14px;
   text-decoration: none;
   font-style: normal;
 }
